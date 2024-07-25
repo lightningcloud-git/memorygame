@@ -13,8 +13,24 @@ function flash(randomNumber){
 var block = "block"+randomNumber;
 document.getElementById(block).style.backgroundColor = "Green";
 
+setTimeout(function() {
+  	document.getElementById(block).style.backgroundColor = "Grey";
+
+}, 500);
 
 }
+
+
+function changeBack(block) {
+	document.getElementById(block).style.backgroundColor = "Red";
+}
+
+function backToGrey(block) {
+	document.getElementById(block).style.backgroundColor = "Grey";
+}
+
+
+
 
 
 
