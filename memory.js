@@ -6,7 +6,7 @@ console.log(randomNumber)
 randomNumber = randomNumber + 1;
 flash(randomNumber);
 const flashingorder= [];
-flashingorder=randomNumber;
+flashingorder=randomNumber+1;
 
 
 }
