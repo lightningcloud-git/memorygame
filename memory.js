@@ -1,14 +1,32 @@
+let level = 0;
 
 function MemoryGame() {
 
+level = 5;
+
+
+nextSequence();
+
+
+}
+
+function nextSequence() {
+    level++;
+    
+for (let i = 0; i < level; i++) {
 var randomNumber = Math.floor(Math.random() * 4);
-console.log(randomNumber)
-randomNumber = randomNumber + 1;
-flash(randomNumber);
-const flashingorder= [];
-flashingorder=randomNumber+1;
+    console.log(randomNumber)
+    randomNumber = randomNumber + 1;
+    console.log(randomNumber)
+    
+    setTimeout(function() {
+  	flash(randomNumber);
 
-
+}, 500);
+    
+    }
+    
+    
 }
 
 function flash(randomNumber){
